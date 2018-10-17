@@ -15,6 +15,7 @@ function dataBase(){
                 database:'yoo'          //数据库里面的数据
             });
             //2,连接
+
             this.connection.connect();
         }
 

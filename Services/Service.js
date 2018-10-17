@@ -23,6 +23,7 @@ function serviceLayer() {
         var password=crypto(password);
         var tel=crypto(tel);
 
+
         var that = this;
         this.checkUser(tel, function (result) {
             if (result) {

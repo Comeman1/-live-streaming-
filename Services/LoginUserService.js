@@ -16,10 +16,6 @@ function UserService(){
     this.checkUser=function(tel,password,call){
 
         //(1)用户工具类
-        var  tool=require('../Tools/tool');
-        var name =tool.crypto(tel);
-        var password =tool.crypto(password);
-
         this.selectUserByName(tel,function(result){
             var  body={
                 state:0,
