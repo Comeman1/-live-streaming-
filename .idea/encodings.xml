@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Controllers/IndexControllers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Controllers/LoginContrllers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Controllers/RegisterControllers.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/LoginUserService.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/RegisterService.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Services/Service.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Tools/tool.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/Register.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/UserDao.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/database.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/index.js" charset="UTF-8" />
+  </component>
+</project>
