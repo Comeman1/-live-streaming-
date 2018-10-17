@@ -29,6 +29,46 @@ app.post('/login',urlencodedParser,IndexControllers.login);
 app.post('/register',urlencodedParser,indexControllers.register);
 
 
+
+//设置每个界面路由地址
+app.get('/contact',function (req,res) {
+    res.render('contact',{});
+});
+app.get('/comedy',function(req,res){
+    res.render('comedy',{});
+})
+app.get('/genre',function(req,res){
+    res.render('genre',{});
+})
+app.get('/icons',function(req,res){
+    res.render('icons',{});
+})
+app.get('/comedy',function(req,res){
+    res.render('comedy',{});
+})
+app.get('/list',function(req,res){
+    res.render('list',{});
+})
+app.get('/news',function(req,res){
+    res.render('news',{});
+})
+app.get('/news-single',function(req,res){
+    res.render('news-single',{});
+})
+app.get('/series',function(req,res){
+    res.render('series',{});
+})
+app.get('/short-codes',function(req,res){
+    res.render('short-codes',{});
+})
+app.get('/single',function(req,res){
+    res.render('single',{});
+})
+
+
+
+
+
 //监听
 app.listen(1006,function(){
     console.log("[Server is running at http://localhost:1006]");
