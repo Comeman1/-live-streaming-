@@ -4,8 +4,9 @@
 
 exports.login=function(req,res){
     //1,解析客户端提交的数据
-    var tel  = req.body.tel;
-    var password  = req.body.password;
+    var crypto=require("../Tools/tool")
+    var tel  = crypto(req.body.tel);
+    var password  = crypto(req.body.password);
     //2,验证用户是否合法
     //(1)引入userService
     var UserService = require('../Services/LoginUserService');

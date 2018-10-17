@@ -17,7 +17,11 @@ function serviceLayer() {
         }
         //var name=this.crypto(name);
         //var password=this.crypto(password);
-
+ var crypto=require("../Tools/tool")
+        var name=crypto(name);
+        var email=crypto(email);
+        var password=crypto(password);
+        var tel=crypto(tel);
 
         var that = this;
         this.checkUser(tel, function (result) {
@@ -53,5 +57,7 @@ function serviceLayer() {
             }
         });
     }
+
+
 }
 module.exports = serviceLayer;

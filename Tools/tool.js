@@ -1,7 +1,7 @@
 /**
  * Created by 10143 on 2018/10/16.
  */
-exports.crypto=function(source){
+module.exports=function(source){
     //1,引入加密模块
     var crypto = require('crypto');
 //2，生成口令的散列值，crypto模块功能是加密并生成各种散列，createHash(algorithm)方法 ,这是利用给定的算法生成hash对象

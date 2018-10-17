@@ -11,9 +11,9 @@ function UserDao(){
         this.connection = mysql.createConnection({
             host     : 'localhost',       //主机 ip
             user     : 'root',            //MySQL认证用户名
-            password : 'guoxiu',                //MySQL认证用户密码
+            password : '123456',                //MySQL认证用户密码
             port: '3306',                 //端口号
-            database:'express'          //数据库里面的数据
+            database:'yoo'          //数据库里面的数据
         });
         //(3),连接
         this.connection.connect();
