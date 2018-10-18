@@ -31,6 +31,13 @@ app.post('/register',urlencodedParser,indexControllers.register);
 
 
 //设置每个界面路由地址
+app.get('/index',function (req,res) {
+    res.render('index',{});
+});
+app.get('/horror',function (req,res) {
+    res.render('horror',{});
+});
+
 app.get('/contact',function (req,res) {
     res.render('contact',{});
 });
