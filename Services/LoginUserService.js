@@ -31,6 +31,7 @@ function UserService(){
             }else{
                 //2,把密码从数组对象里面取出来
                 var  buffer = result[0].password;
+
                 //3,判断用户是否合法
                 if(password==buffer){
                     state:2,

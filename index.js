@@ -4,6 +4,17 @@
 //1,引入express
 var express = require('express');
 var app = express();
+var session = require('express-session');
+var cookieParser = require('cookie-parser');
+app.use(cookieParser());
+app.use(session({
+    resave:false,
+    saveUninitialized: true,
+    secret: '12345',
+    name: 'express_11_cookie',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
+    cookie: {maxAge: 80*1000 },     //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
+}));
+
 
 //2,设置模板引擎
 var path = require('path');
@@ -31,6 +42,11 @@ app.post('/register',urlencodedParser,indexControllers.register);
 
 
 //设置每个界面路由地址
+
+app.get('/horror',function (req,res) {
+    res.render('horror',{});
+});
+
 app.get('/contact',function (req,res) {
     res.render('contact',{});
 });
