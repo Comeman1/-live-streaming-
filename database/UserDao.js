@@ -16,6 +16,8 @@ function UserDao(){
             database:'yoo'          //数据库里面的数据
         });
         //(3),连接
+
+
         this.connection.connect();
     }
     this.selectUserByName=function(tel,call){

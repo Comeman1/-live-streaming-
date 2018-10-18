@@ -30,7 +30,7 @@ function serviceLayer() {
                 that.database.insertUser(name,email,password,tel, function (data) {
                     resData.msg = "注册成功";
                     resData.insertId = data.insertId;
-                    call(result);
+                    // call(result);
                     call(resData);
 
                 })

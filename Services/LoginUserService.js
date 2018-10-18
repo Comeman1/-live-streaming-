@@ -19,7 +19,8 @@ function UserService(){
         this.selectUserByName(tel,function(result){
             var  body={
                 state:0,
-                msg:"hello"
+                msg:"hello",
+                name:""
             }
 
             //1,获得数组的长度
@@ -34,6 +35,7 @@ function UserService(){
                 if(password==buffer){
                     state:2,
                         body.msg="登录成功！";
+                    body.name=result[0].name;
                 }else{
                     state:1,
                         body.msg="登录失败，密码错误，请重新输入密码！";

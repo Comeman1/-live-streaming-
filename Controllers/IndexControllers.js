@@ -7,7 +7,6 @@ exports.index = function(req,res){
 //}
 
 exports.register=function (req,res) {
-    console.log(0)
     //1,解析客户端提交的数据
     var name = req.body.name;
     var email = req.body.email;

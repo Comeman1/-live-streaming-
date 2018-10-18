@@ -49,27 +49,20 @@
 	<div class="w3_agilits_inner_bottom">
 		<div class="col-md-6 wthree_agile_login">
 			<ul>
-				<li><i class="fa fa-phone" aria-hidden="true"></i> (+000) 009 455 4088</li>
 				<li><a href="#" class="login"  data-toggle="modal" data-target="#myModal4">登陆</a></li>
 				<li><a href="#" class="login reg"  data-toggle="modal" data-target="#myModal5">注册</a></li>
-
 			</ul>
 		</div>
 		<div class="col-md-6 wthree_share_agile">
 
-			<div class="single-agile-shar-buttons">
-				<ul>
-					<li>
-						<div class="fb-like" data-href="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>
-
-					</li>
-					<li>
-						<div class="fb-share-button" data-href="" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="">分享</a></div>
-					</li>
-
-				</ul>
-			</div>
+		<div class="single-agile-shar-buttons">
+			<ul>
+				<div id="username" class="col-md-1 " style="margin-right:-25px;float: right; height: 25px; width: 200px;line-height: 25px;text-align: center">请登录
+				</div>
+			</ul>
 		</div>
+	</div>
+
 	</div>
 </div>
 <!--//banner-bottom-->
@@ -115,7 +108,9 @@
 								traditional:true,
 								success:function(data){
 
-									alert(data)
+									alert("登录成功")
+                                    document.getElementById("username").innerHTML="登陆成功："+data;
+									document.getElementById("btn").click();
 
 								}
 							});
@@ -171,9 +166,8 @@
 								traditional:true,
 								success:function(data){
 
-									console.log(112)
+                                    alert(data)
 
-//															alert(data);
 								}
 							});
 						}

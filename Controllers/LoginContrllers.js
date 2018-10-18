@@ -16,7 +16,9 @@ exports.login=function(req,res){
     userService.init();
     //(4)验证用户是否合法
     userService.checkUser(tel,password,function(result){
-        res.end(JSON.stringify(result));
-    });
 
+        res.end(JSON.stringify(result.name));
+        console.log("登陆成功");
+
+    });
 }
