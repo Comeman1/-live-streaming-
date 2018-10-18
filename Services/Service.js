@@ -19,7 +19,6 @@ function serviceLayer() {
         //var password=this.crypto(password);
  var crypto=require("../Tools/tool")
         var password=crypto(password);
-        var tel=crypto(tel);
 
         var that = this;
         this.checkUser(tel, function (result) {

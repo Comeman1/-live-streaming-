@@ -18,11 +18,12 @@ function UserService() {
             //(2) 长度为0的时候，注册用户
             if(length==0){
                 user.insert(name,email,tel,password,function(data){
-                    console.log(data);
+                    //console.log(data);
+                    alert("注册成功");
                 })
                 user.end();
             }else{
-                console.log("用户已经存在");
+                alert("用户已经存在");
             }
         });
     }
