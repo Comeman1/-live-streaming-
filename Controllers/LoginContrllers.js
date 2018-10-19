@@ -44,8 +44,7 @@ exports.login=function(req,res){
     userService.init();
     //(4)验证用户是否合法
     userService.checkUser(tel,password,function(result){
-<<<<<<< HEAD
-=======
+
         if(result.state==2) {
             req.session.sign = true;
             res.cookie('tel', result.tel, {maxAge: 60 * 60 * 1000});
@@ -55,10 +54,6 @@ exports.login=function(req,res){
         result.password=null;
         res.end(JSON.stringify(result));
     });
->>>>>>> origin/master
-
-        res.end(JSON.stringify(result.name));
+    res.end(JSON.stringify(result.name));
         console.log("登陆成功");
-
-    });
 }
