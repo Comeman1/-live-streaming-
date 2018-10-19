@@ -33,6 +33,8 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 
 //1,首页
+var DataController = require('./controllers/DataControllers');
+app.get('/index', DataController.index);
 var indexControllers = require('./Controllers/IndexControllers');
 app.get('/index',indexControllers.index);
 var IndexControllers = require('./Controllers/LoginContrllers');
