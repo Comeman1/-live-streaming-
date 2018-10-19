@@ -12,16 +12,39 @@
 			<div class="top"><span>网站后台登录</span></div>
 			<div class="down">
 				<img src="../img/login.png" alt="" />
-				<p id="p1">用户名：<input type="text" style="height: 30px;" /></p>
-				<p id="p2">密&nbsp;&nbsp;&nbsp;码：<input type="password" style="height: 30px;" /></p>
+				<p id="p1">用户名：<input type="text" id="name" style="height: 30px;" /></p>
+				<p id="p2">密&nbsp;&nbsp;&nbsp;码：<input type="password" id="password" style="height: 30px;" /></p>
 				<a class="forget" href = "findPassword.html">忘记密码？</a>
-				<input type="button" id="input" value="登录" style="width: 60px;height: 30px;" />
+				<input type="button" onclick="login()" id="input" value="登录" style="width: 60px;height: 30px;" />
 			</div>
+			<script type="text/javascript">
+
+				function login(){
+					console.log(111)
+					var tel = document.getElementById("name");
+					var password = document.getElementById('password');
+					$.ajax({
+
+						url:'login',
+						type:'post',
+						data:{
+							name:name.value,
+							password:password.value
+						},
+						traditional:true,
+						success:function(data){
+
+							alert("登录成功")
+
+						}
+					});
+				}
+			</script>
 		</div>
 		<script type="text/javascript">
 			var btn = document.getElementById("input");
 			btn.onclick = function(){
-				window.open("index.html");
+				window.open("index");
 			}
 		</script>
 	</body>
