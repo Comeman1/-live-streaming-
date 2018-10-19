@@ -28,17 +28,14 @@ var IndexControllers = require('./Controllers/LoginControllers');
 app.get('/index',function (req,res) {
     res.render('index',{});
 });
-app.get('/from',function (req,res) {
-    res.render('from',{});
-});
 app.get('/back_up',function (req,res) {
     res.render('back_up',{});
 });
 app.get('/findPassword',function (req,res) {
     res.render('findPassword',{});
 });
-app.get('/from',function (req,res) {
-    res.render('from',{});
+app.get('/form',function (req,res) {
+    res.render('form',{});
 });
 app.get('/post',function (req,res) {
     res.render('post',{});
