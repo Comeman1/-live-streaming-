@@ -1,0 +1,25 @@
+{
+  "name": "live-streaming-",
+  "version": "1.0.0",
+  "description": "Our group first program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Comeman1/-live-streaming-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Comeman1/-live-streaming-/issues"
+  },
+  "homepage": "https://github.com/Comeman1/-live-streaming-#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  }
+}
