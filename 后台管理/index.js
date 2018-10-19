@@ -28,6 +28,9 @@ var IndexControllers = require('./Controllers/LoginControllers');
 app.get('/index',function (req,res) {
     res.render('index',{});
 });
+app.get('/from',function (req,res) {
+    res.render('from',{});
+});
 app.get('/back_up',function (req,res) {
     res.render('back_up',{});
 });
