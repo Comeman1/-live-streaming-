@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>用户登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+	</head>
+
+	<body>
+		<div id="div" style="background:skyblue">
+			<div class="top"><span>网站后台登录</span></div>
+			<div class="down">
+				<img src="../img/login.png" alt="" />
+				<p id="p1">用户名：<input type="text" style="height: 30px;" /></p>
+				<p id="p2">密&nbsp;&nbsp;&nbsp;码：<input type="password" style="height: 30px;" /></p>
+				<a class="forget" href = "findPassword.html">忘记密码？</a>
+				<input type="button" id="input" value="登录" style="width: 60px;height: 30px;" />
+			</div>
+		</div>
+		<script type="text/javascript">
+			var btn = document.getElementById("input");
+			btn.onclick = function(){
+				window.open("index.html");
+			}
+		</script>
+	</body>
+
+</html>

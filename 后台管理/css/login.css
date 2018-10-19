@@ -1,0 +1,83 @@
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			
+			#div {
+				width: 500px;
+				height: 250px;
+				position: relative;
+				top: 220px;
+				left: 35%;
+				/*background-color: red;*/
+				border: 1px solid #666;
+			}
+			
+			.top {
+				display: inline-block;
+				width: 100%;
+				height: 50px;
+				background-color: silver;
+			}
+			
+			.top span {
+				line-height: 50px;
+				margin-left: 10px;
+				border-color: silver;
+			}
+			
+			.down img {
+				margin-top: 10px;
+				margin-left: 80px;
+			}
+			
+			#p1 {
+				position: absolute;
+				top: 80px;
+				left: 220px;
+			}
+			
+			#p2 {
+				position: absolute;
+				top: 130px;
+				left: 220px;
+			}
+			
+			#input {
+				position: absolute;
+				top: 180px;
+				left: 220px;
+			}
+
+			.down .forget {
+				display:block;
+				text-decoration:none;
+				position:absolute;
+				top:210px;
+				left:385px;
+				color:#000;
+			}
+			.down .forget:hover {
+				color:red;
+			}
+
+			.wraper {
+				margin:50px auto;
+				width:300px;
+				height:600px;
+			}
+
+			.container p{
+				margin-top:20px;
+			}
+
+			.container #btn {
+				margin-top:20px;
+				width:50px;
+				height:40px;
+				outline:none;
+				border:3px solid skyblue;
+				border-radius:10px;
+				background-color:green;
+				font-weight:bold;
+			}
